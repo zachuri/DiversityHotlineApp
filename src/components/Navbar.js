@@ -31,7 +31,11 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}> 
+          <Link 
+            to='/' 
+            className='navbar-logo' 
+            onClick={closeMobileMenu}
+          > 
             DH 
             <i class="fab fa-octopus-deploy"></i>
           </Link>
@@ -59,11 +63,11 @@ function Navbar() {
 
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/about-us'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                About Us
               </Link>
             </li>
 
