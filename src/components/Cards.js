@@ -10,30 +10,30 @@ function Cards() {
                <div className='cards__wrapper'>
                     <ul className='cards__items'>
                         <CardItem
-                            src='images/img-9.jpg'
-                            text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                            label='Valve 1'
+                            src='images/valve1.png'
+                            text='Explore and learn more about diverse topics through Researh Article, Surveys, etc.'
+                            label='Research and Resources'
                             path='/services'
                         />
                         <CardItem
-                            src='images/img-2.jpg'
-                            text='Travel through the Islands of Bali in a Private Cruise'
-                            label='Valve 2'
+                            src='images/valve2.png'
+                            text='Professional Development Calendar and Topics surrounding the topics of Diversity, Equity, and Inclusion'
+                            label='Development and Training'
                             path='/services'
                         />
                     </ul>
                         
                     <ul className='cards__items'>
                         <CardItem
-                            src='images/img-3.jpg'
-                            text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-                            label='Valve 3'
+                            src='images/valve3.png'
+                            text='Chat with a mentor around specific and personal circumstances; includes Coaching Inquiry form, 24/7 Chat Box, etc.'
+                            label='Coaching and Mentoring'
                             path='/services'
                         />
                         <CardItem
-                            src='images/img-4.jpg'
-                            text='Experience Football on Top of the Himilayan Mountains'
-                            label='Valve 4'
+                            src='images/valve4.jpg'
+                            text='Meet with a mentor either in person or online to discuss more serious situations related to Diversity, Equity, and Inclusion'
+                            label='Mediation'
                             path='/about-us'
                         />
                     </ul>
