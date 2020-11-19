@@ -1,26 +1,23 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
+import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { Button } from './Button';
 
 function Navbar() {
-  const [click , setClick] = useState(false);
+  const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {            
-    if(window.innerWidth <= 960) {                
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
       setButton(false);
-    }
-    else
-    {
+    } else {
       setButton(true);
     }
   };
 
-  //Removes sign up from showing up when refreshed
   useEffect(() => {
     showButton();
   }, []);
@@ -31,26 +28,19 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link 
-            to='/' 
-            className='navbar-logo' 
-            onClick={closeMobileMenu}
-          > 
-            DH 
-            <i class="fab fa-octopus-deploy"></i>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            TRVL
+            <i className='fab fa-octopus-deploy' />
           </Link>
-
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-
             <li className='nav-item'>
               <Link
                 to='/services'
@@ -60,7 +50,6 @@ function Navbar() {
                 Services
               </Link>
             </li>
-
             <li className='nav-item'>
               <Link
                 to='/about-us'
@@ -80,13 +69,12 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
-
           </ul>
-          
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
   );
 }
+
 export default Navbar;
