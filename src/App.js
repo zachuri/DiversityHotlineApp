@@ -18,7 +18,6 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
         </Switch>
       </Router>
-  );
-}
+  ); }
 
 export default App;
