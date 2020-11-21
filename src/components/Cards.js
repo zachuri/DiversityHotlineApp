@@ -14,13 +14,13 @@ function Cards() {
               src='images/valve1.png'
               text='Research and Resources'
               label='Open Waters'
-              path='/services'
+              path='/valve1'
             />
             <CardItem
               src='images/valve2.png'
               text='Professional Development and Training'
               label='System Check'
-              path='/services'
+              path='/valve2'
             />
           </ul>
           <ul className='cards__items'>
@@ -28,13 +28,13 @@ function Cards() {
               src='images/valve3.png'
               text='Coaching and Mentoring'
               label='Dive Team'
-              path='/services'
+              path='/valve3'
             />
             <CardItem
               src='images/valve4.jpg'
               text='Mediation Meatings for more serious situations related to Diversity'
               label='Deep Dive Into Murky Waters'
-              path='/products'
+              path='/valve4'
             />
           </ul>
         </div>
