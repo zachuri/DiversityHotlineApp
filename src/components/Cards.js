@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
@@ -32,7 +31,7 @@ function Cards() {
             />
             <CardItem
               src='images/valve4.jpg'
-              text='Mediation Meatings for more serious situations related to Diversity'
+              text='Mediation Meetings'
               label='Deep Dive Into Murky Waters'
               path='/valve4'
             />
