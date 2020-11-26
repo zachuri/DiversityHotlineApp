@@ -1,12 +1,12 @@
-import react from 'react';
-
 const Hero = ({handleLogout}) => {
     return (
-        <section className="hero">
-            <nav>
-                <h2>Welcome</h2>
-                <button onClick={handleLogout}>Logout</button>
-            </nav>
+        <section className="login">
+            <div className="loginContainer">
+                <label>Welcome User</label>
+                    <label id="user_para">You're currently logged in.</label>
+                    <button onClick={handleLogout}>Logout</button>
+            </div>
+            
         </section>
     )
 }

@@ -74,6 +74,12 @@ const SignUp = () => {
       if (user) {
         clearInputs();
         setUser(user);
+
+        if(user != null){
+
+          var email_id = user.email;
+          document.getElementById("user_para").innerHTML = "User : " + email_id;
+        }
       }
       else {
         setUser("")
@@ -88,7 +94,10 @@ const SignUp = () => {
   return (
     <div className="App">
       {user ? (            
-        <Hero handleLogout={handleLogout}/>
+        <Hero 
+          handleLogout={handleLogout}
+          setEmail={setEmail}
+        />
       ) : (
         <Login 
           email={email} 
@@ -101,7 +110,7 @@ const SignUp = () => {
           setHasAccount={setHasAccount}
           emailError={emailError}
           passwordError={passwordError}
-      />
+        />
     )}
     </div>
   );
