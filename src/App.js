@@ -11,6 +11,7 @@ import Valve1 from './pages/valves/Valve1';
 import Valve2 from './pages/valves/Valve2';
 import Valve3 from './pages/valves/Valve3';
 import Valve4 from './pages/valves/Valve4';
+import Coaching from './pages/valves/Coaching';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/valve2' component={Valve2} />
         <Route path='/valve3' component={Valve3} />
         <Route path='/valve4' component={Valve4} />
+        <Route path='/coaching' component={Coaching} />
       </Switch>
     </Router>
   );
