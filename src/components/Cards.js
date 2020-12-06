@@ -14,7 +14,10 @@ function Cards() {
               text='Research and Resources'
               label='Open Waters'
               path='/valve1'
+              
             />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
               src='images/valve2.png'
               text='Professional Development and Training'
@@ -28,7 +31,11 @@ function Cards() {
               text='Coaching and Mentoring'
               label='Dive Team'
               path='/valve3'
+
+              
             />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
               src='images/valve4.jpg'
               text='Mediation Meetings'
