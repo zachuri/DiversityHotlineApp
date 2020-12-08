@@ -108,30 +108,33 @@ export default class Coaching extends React.Component {
                     <div id="error"></div>
                     <form id="form" onSubmit={this.handleSubmit}>
                         <label>Q's 1: From a scale of 1 to 10 how are you feeling?</label>
-                            <input id="q1"type="text" className="form-control" placeholder="Answer for Q1" value={this.state.q1} onChange={this.handleChange} name="q1"/>
                             <p className="errorMsg">{this.state.q1Error}</p>
+                            <input id="q1"type="text" className="form-control" placeholder="Answer for Q1" value={this.state.q1} onChange={this.handleChange} name="q1"/>
 
                         <label>Q's 2: Have your reflected upon your situation?</label>
-                            <input id="q2" type="text" className="form-control" placeholder="Answer for Q2" value={this.state.q2} onChange={this.handleChange} name="q2"/>
                             <p className="errorMsg">{this.state.q2Error}</p>
+                            <input id="q2" type="text" className="form-control" placeholder="Answer for Q2" value={this.state.q2} onChange={this.handleChange} name="q2"/>
 
                         <label>Q's 3: Are you okay?</label>
-                            <input id="q3" type="text" className="form-control" placeholder="Answer for Q3" value={this.state.q3} onChange={this.handleChange} name="q3"/>
                             <p className="errorMsg">{this.state.q3Error}</p>
+                            <input id="q3" type="text" className="form-control" placeholder="Answer for Q3" value={this.state.q3} onChange={this.handleChange} name="q3"/>
+
+                        <label>Topic to Discuss:</label>
+                            <p className="errorMsg">{this.state.subjectError}</p>
+                            <input id="subject"type="text" className="form-control" placeholder="Topic" value={this.state.subject} onChange={this.handleChange} name="subject"/>
+
+                        <label>Explain your situation:</label>
+                            <p className="errorMsg">{this.state.messageError}</p>
+                            <textarea id="message" className="form-control" cols="54.5" rows="8" placeholder="Please explain" value={this.state.message} onChange={this.handleChange} name="message"></textarea>
 
                         <title>Contact Info</title>
-                            <input id="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name"/>
                             <p className="errorMsg">{this.state.nameError}</p>
+                            <input id="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name"/>
 
-                            <input id="email" type="email" className="form-control" placeholder="Email Address" value={this.state.email} onChange={this.handleChange} name="email"/>
                             <p className="errorMsg">{this.state.emailError}</p>
+                            <input id="email" type="email" className="form-control" placeholder="Email Address" value={this.state.email} onChange={this.handleChange} name="email"/>
 
-                            <input id="subject"type="text" className="form-control" placeholder="Topic" value={this.state.subject} onChange={this.handleChange} name="subject"/>
-                            <p className="errorMsg">{this.state.subjectError}</p>
-
-                            <textarea id="message" className="form-control" cols="54.5" rows="8" placeholder="Explain your situation" value={this.state.message} onChange={this.handleChange} name="message"></textarea>
-                            <p className="errorMsg">{this.state.messageError}</p>
-
+                            
                             <button type="submit" value="Send Message">Submit </button>
                     </form>
 
