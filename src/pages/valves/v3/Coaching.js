@@ -94,7 +94,7 @@ export default class Coaching extends React.Component {
                 console.log(this.state);
                 // clear form
                 this.setState(initialState);
-                
+
                 //Go to Success Page
                 this.props.history.push('/Success');
         }
@@ -133,7 +133,7 @@ export default class Coaching extends React.Component {
 
                             <title>Contact Info</title>
                                 <p className="errorMsg">{this.state.nameError}</p>
-                                <input id="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} name="name"/>
+                                <input id="name" type="text" className="form-control" placeholder="First Name Only" value={this.state.name} onChange={this.handleChange} name="name"/>
 
                                 <p className="errorMsg">{this.state.emailError}</p>
                                 <input id="email" type="email" className="form-control" placeholder="Email Address" value={this.state.email} onChange={this.handleChange} name="email"/>
