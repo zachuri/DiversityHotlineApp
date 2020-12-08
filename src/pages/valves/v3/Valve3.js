@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../App.css'
-import CardItem from '../../components/CardItem';
-import '../../components/Cards.css';
+import '../../../App.css'
+import CardItem from '../../../components/CardItem';
+import '../../../components/Cards.css';
 
 function Valve3() {
     return (
@@ -14,7 +14,7 @@ function Valve3() {
                     src='images/coaching.png'
                     text='Tell a mentor about your personal situation'
                     label='Coaching'
-                    path='/valve1'
+                    path='/coaching'
                     />
                     <CardItem
                     src='images/mentoring.png'
