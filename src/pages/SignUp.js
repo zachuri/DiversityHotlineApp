@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import fire from '../service/fire';
+import fire from '../fire';
 import '../App.css';
 import Login from '../components/Login';
 import Hero from './Hero';
