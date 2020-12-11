@@ -125,11 +125,13 @@ export default class Coaching extends React.Component {
 
                             <label>Topic to Discuss:</label>
                                 <p className="errorMsg">{this.state.subjectError}</p>
-                                <input id="subject"type="text" className="form-control" placeholder="Topic" value={this.state.subject} onChange={this.handleChange} name="subject"/>
+                                <input id="subject" type="text" className="form-control" placeholder="Topic" value={this.state.subject} onChange={this.handleChange} name="subject"/>
 
                             <label>Explain your situation:</label>
                                 <p className="errorMsg">{this.state.messageError}</p>
-                                <textarea id="message" className="form-control" cols="54.5" rows="8" placeholder="Please explain" value={this.state.message} onChange={this.handleChange} name="message"></textarea>
+                                <textarea id="message" className="form-control" cols="54.5" rows="8" placeholder="Please explain your situation" 
+                                    value={this.state.message} onChange={this.handleChange} name="message">
+                                </textarea>
 
                             <title>Contact Info</title>
                                 <p className="errorMsg">{this.state.nameError}</p>
