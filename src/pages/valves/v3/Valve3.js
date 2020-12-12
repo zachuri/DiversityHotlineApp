@@ -20,7 +20,7 @@ function Valve3() {
                     src='images/mentoring.png'
                     text='Talk to your mentor one on one'
                     label='Mentoring'
-                    path='/valve2'
+                    path='/mentoring'
                     />
                 </ul>
             </div>
