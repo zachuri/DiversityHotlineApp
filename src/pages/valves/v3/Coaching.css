@@ -72,6 +72,18 @@ title {
   line-height: 1;
 }
 
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
 .contact .contactContainer input {
   width: 100%;
   border: none;

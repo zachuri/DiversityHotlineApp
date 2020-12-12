@@ -19,6 +19,7 @@ function sendEmail(e) {
 }
 */
 
+
 const initialState = {
   q1: "",
   q2: "",
@@ -30,6 +31,7 @@ const initialState = {
   q1Error: "",
   q2Error: "",
   q3Error: "",
+  q4Error: "",
   nameError: "",
   emailError: "",
   subjectError: "",
@@ -52,6 +54,7 @@ export default class Coaching extends React.Component {
         let q1Error = "";
         let q2Error = "";
         let q3Error =  "";
+        let q4Error =  "";
         let nameError =  "";
         let emailError = "";
         let subjectError = "";
@@ -63,6 +66,7 @@ export default class Coaching extends React.Component {
           q1Error = "Q1 cannot be blank";
           q2Error = "Q2 cannot be blank";
           q3Error = "Q3 cannot be blank";
+          q4Error = "Q4 cannot be blank";
           subjectError = "Subject cannot be blank";
           messageError = "Messages cannont be blank";
         }
@@ -73,7 +77,7 @@ export default class Coaching extends React.Component {
     
         if (emailError || nameError || q1Error || q2Error || q3Error
              || subjectError || messageError) {
-          this.setState({ emailError, nameError, q1Error, q2Error, q3Error, subjectError, messageError });
+          this.setState({ emailError, nameError, q1Error, q2Error, q3Error, q4Error, subjectError, messageError });
           return false;
         }
     
@@ -100,10 +104,10 @@ export default class Coaching extends React.Component {
         }
       };
 
+
     render () {
         return (
             <div className='App'>
-
                 <section className="contact">
                     <div className="contactContainer">
 
@@ -111,19 +115,32 @@ export default class Coaching extends React.Component {
 
                         <div id="error"></div>
                         <form id="form" onSubmit={this.handleSubmit}>
-                            <label>Q's 1: From a scale of 1 to 10 how are you feeling?</label>
+                            <label>1. How do you feel right now? (Select an Emoji)</label>
                                 <p className="errorMsg">{this.state.q1Error}</p>
-                                <input id="q1"type="text" className="form-control" placeholder="Answer for Q1" value={this.state.q1} onChange={this.handleChange} name="q1"/>
+                                {/*
+                                <input id="q1" type="text" className="form-control" placeholder="Answer with emoji's" value={this.state.q1} onChange={this.handleChange} name="q1"/>
+                                */}
+                                <select id="q1" type="text" className="form-control" placeholder="Answer with emoji's" onChange={this.handleChange} name="q1">
+                                    <option value="Happy😀">😀</option>
+                                    <option value="Good🙂">🙂</option>
+                                    <option value="Okay🙁">🙁</option>
+                                    <option value="Sad☹️">☹️</option>
+                                    <option value="Bad😭">😭</option>
+                                </select>
 
-                            <label>Q's 2: Have your reflected upon your situation?</label>
+                            <label>2. Is this the first time this incident has occured or is this a repeated offense?</label>
                                 <p className="errorMsg">{this.state.q2Error}</p>
-                                <input id="q2" type="text" className="form-control" placeholder="Answer for Q2" value={this.state.q2} onChange={this.handleChange} name="q2"/>
+                                <input id="q2" type="text" className="form-control" placeholder="(Yes/no)" value={this.state.q2} onChange={this.handleChange} name="q2"/>
 
-                            <label>Q's 3: Are you okay?</label>
+                            <label>3. Is this your first time reaching out to Diversity Hotline for Coaching/Mentoring support?</label>
                                 <p className="errorMsg">{this.state.q3Error}</p>
-                                <input id="q3" type="text" className="form-control" placeholder="Answer for Q3" value={this.state.q3} onChange={this.handleChange} name="q3"/>
+                                <input id="q3" type="text" className="form-control" placeholder="(Yes/no)" value={this.state.q3} onChange={this.handleChange} name="q3"/>
+                            
+                            <label>4. In three words or less, describe how the incident made you feel?</label>
+                                <p className="errorMsg">{this.state.q4Error}</p>
+                                <input id="q3" type="text" className="form-control" placeholder="Answer for Question 4" value={this.state.q4} onChange={this.handleChange} name="q4"/>
 
-                            <label>Topic to Discuss:</label>
+                            <label>Topic of Discussion:</label>
                                 <p className="errorMsg">{this.state.subjectError}</p>
                                 <input id="subject" type="text" className="form-control" placeholder="Topic" value={this.state.subject} onChange={this.handleChange} name="subject"/>
 
