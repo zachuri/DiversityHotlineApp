@@ -6,7 +6,7 @@ export default class Mentoring extends React.Component {
   render() {
     return (
       <div className='cards'>
-        <h1>Dive Team!</h1>
+        <h1>Choose A Mentor/ Choose a date to meet</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
