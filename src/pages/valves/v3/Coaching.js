@@ -8,7 +8,6 @@ import './Coaching.css';
 /*
 function sendEmail(e) {
     e.preventDefault();
-
     emailjs.sendForm('service_rzl3qea', 'template_70a9q59', e.target, 'user_2xrMsKQKeM0YDVM9hf0dR')
     .then((result) => {
         console.log(result.text);
@@ -24,6 +23,7 @@ const initialState = {
   q1: "",
   q2: "",
   q3: "",
+  q4: "",
   name: "",
   email: "",
   subject: "",
@@ -31,7 +31,6 @@ const initialState = {
   q1Error: "",
   q2Error: "",
   q3Error: "",
-  q4Error: "",
   nameError: "",
   emailError: "",
   subjectError: "",
@@ -53,17 +52,17 @@ export default class Coaching extends React.Component {
     validate = () => {
         let q1Error = "";
         let q2Error = "";
-        let q3Error =  "";
-        let q4Error =  "";
+        let q3Error = "";
+        let q4Error = "";
         let nameError =  "";
         let emailError = "";
         let subjectError = "";
         let messageError= "";
     
         if (!this.state.name || !this.state.q1 || !this.state.q2 || !this.state.q3  
-            || !this.state.subject || !this.state.message) {
+            || !this.state.q4 || !this.state.subject || !this.state.message) {
           nameError = "name cannot be blank";
-          q1Error = "Q1 cannot be blank";
+          q1Error = "Must Select an Emoji (CANNOT BE BLANK)";
           q2Error = "Q2 cannot be blank";
           q3Error = "Q3 cannot be blank";
           q4Error = "Q4 cannot be blank";
@@ -104,10 +103,10 @@ export default class Coaching extends React.Component {
         }
       };
 
-
     render () {
         return (
             <div className='App'>
+
                 <section className="contact">
                     <div className="contactContainer">
 
@@ -121,11 +120,15 @@ export default class Coaching extends React.Component {
                                 <input id="q1" type="text" className="form-control" placeholder="Answer with emoji's" value={this.state.q1} onChange={this.handleChange} name="q1"/>
                                 */}
                                 <select id="q1" type="text" className="form-control" placeholder="Answer with emoji's" onChange={this.handleChange} name="q1">
-                                    <option value="Happy😀">😀</option>
-                                    <option value="Good🙂">🙂</option>
-                                    <option value="Okay🙁">🙁</option>
-                                    <option value="Sad☹️">☹️</option>
-                                    <option value="Bad😭">😭</option>
+                                {/*
+                                    User must choose an emoji can't be the first one or errors will show up for all
+                                */}
+                                    <option placeholder="Choose an emoji" value="" ></option>
+                                    <option value="😀 Happy" >😀 Happy</option>
+                                    <option value="🙂 Good">🙂 Good</option>
+                                    <option value="🙁 Okay">🙁 Okay</option>
+                                    <option value="☹️ Sad">☹️ Sad</option>
+                                    <option value="😭 Bad">😭 Bad</option>
                                 </select>
 
                             <label>2. Is this the first time this incident has occured or is this a repeated offense?</label>
@@ -152,11 +155,10 @@ export default class Coaching extends React.Component {
 
                             <title>Contact Info</title>
                                 <p className="errorMsg">{this.state.nameError}</p>
-                                <input id="name" type="text" className="form-control" placeholder="First Name Only" value={this.state.name} onChange={this.handleChange} name="name"/>
+                                <input id="name" type="text" className="form-control" placeholder="Prefered Name" value={this.state.name} onChange={this.handleChange} name="name"/>
 
                                 <p className="errorMsg">{this.state.emailError}</p>
                                 <input id="email" type="email" className="form-control" placeholder="Email Address" value={this.state.email} onChange={this.handleChange} name="email"/>
-
                                 
                                 <button type="submit" value="Send Message">Submit </button>
                         </form>
