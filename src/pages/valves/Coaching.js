@@ -30,7 +30,7 @@ export default function Coaching() {
     </base>
     </head>
     
-
+    // takes information to google sheets --> account: diversityhotline@gmail.com   password: DiversityHotline123
 
     var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbx_GpP58XCeeCWWBUnQnCbh1AanOI2a0ziuzot-c8b2eFsZPQW5/exec';
@@ -45,7 +45,10 @@ export default function Coaching() {
     }).success(
     // do something
     // have to handle it here in order to write in sheets
-    document.write("hmmm")  // place holder for now
+    //url.reload()
+    document.write("Success!")  // place holder for now
+    // do something
+    
     );
     })
 
