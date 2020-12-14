@@ -3,7 +3,21 @@
     background: #fff;
   }
   
+h1{
+  font-size: 30px;
+  
+}
 
+h2{
+  font-size: ;
+  color: red;
+  text-align: center;
+
+}
+h3{
+  font-size: 16px;
+  text-align: center;
+}
   
   .cards__container2 {
     display: flex;

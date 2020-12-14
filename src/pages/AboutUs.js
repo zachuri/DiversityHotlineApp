@@ -9,12 +9,28 @@ export default function AboutUs() {
     return (
     <div className='cards2'>
         <h1 className='about-us2'>We are REAL people diving into AUTHENTIC CONVERSATIONS... all of the time.</h1>
+        <br></br>
+        <br></br>
+        <h2 className="vision">Vision:</h2>
+        <br></br>
+        <h3 className='vision-statement'>Conversations around diversity, equity, and inclusion can be very difficult. Our VISION is to create a dynamic, fluid, and transdisciplinary platform for discussing issues surrounding diversity, equity, and inclusion.</h3>
+        
+        <br></br>
+        <h2 className="mision">Mission: Create a DIVE Team equipped to do the following:</h2>
+        <br></br>
+        <h3 className='mission-statement1'>1. Deliver high quality counseling to individuals experiencing trauma as a result of experiences that used their diversity against them.</h3>
+        <br></br>
+        <h3 className='mission-statement2'>2. Deliver high quality training to individuals desiring to create systemic changes, in diversity and inclusion in high schools and colleges. </h3>
+        <br></br>
+        <h3 className='mission-statement3'>3. Performing culturally sensitive evaluations for high schools and colleges interested in conducting a diversity and inclusion audit.</h3>
+        <br></br>
+        <h3 className='mission-statement4'>4. Deliver high quality and objective mediation for individuals needing support in addressing issues of diversity and inclusion at their school setting.</h3>
         <div className='cards__container2'>
             <div className='cards__wrapper2'>
                 <ul className='cards__items2'>
                     <CardItem
-                    src=''
-                    text=''
+                    src='images/josh.jpg'
+                    text="Hello, I'm Josh and I'm a student at the University of California, Irvine and the Founder and CEO of Diversity Hotline."
                     label='Josh'
                     
                     />
