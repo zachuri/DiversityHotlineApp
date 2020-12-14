@@ -2,10 +2,10 @@ import React from 'react'
 
 function Rex() {
     return (
-        <div className="container">
-            <div className="wrapper">
+        <div className="profile-container">
+            <div className="profile-wrapper">
                 <img className="profile-img" src="images/rex.jpg" alt="rex"/>
-                <h1>Xingchen Yang</h1> 
+                <h1 className="profile-name">Xingchen Yang</h1> 
                 <p>
                 Hey! My name is Franchesca Leung and I'm a fourth year Computer Science major 
                 at University of California, Irvine. I'm really happy to be a part of Diversity 

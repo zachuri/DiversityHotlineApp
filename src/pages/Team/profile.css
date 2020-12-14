@@ -1,4 +1,4 @@
-.container {
+.profile-container {
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.container .wrapper {
+.profile-container .profile-wrapper {
   padding: 60px;
   margin: auto;
   width: 100%;
@@ -20,7 +20,7 @@
   border-radius: 10px;
 }
 
-h1 {
+.profile-name {
   text-align: left;
   color: white;
   margin: 20px;
@@ -31,6 +31,26 @@ h1 {
   border-radius: 10px;
 }
 
+.profile-josh {
+  width: 100px;
+}
+
 p {
+  color: white;
+}
+
+.contact-icons {
+  text-align: center;
+  color: inherit;
+  color: white;
+  font-size: 48px;
+}
+
+.contact-text {
+  color: white;
+  text-align: left;
+}
+
+a {
   color: white;
 }

@@ -2,10 +2,10 @@ import React from 'react'
 
 function Art() {
     return (
-        <div className="container">
-           <div className="wrapper">
+        <div className="profile-container">
+           <div className="profile-wrapper">
                <img className="profile-img" src="images/art.png" alt="art"/>
-                <h1>Art Punsalang</h1> 
+                <h1 className="profile-name">Art Punsalang</h1> 
                 <p>
                 Hi there, my name is Art Punsalang, I am an enterprising student from the 
                 University of Irvine California majoring in Information and Computer Science. 
