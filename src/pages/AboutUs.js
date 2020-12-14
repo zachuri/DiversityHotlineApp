@@ -9,31 +9,33 @@ export default function AboutUs() {
 
         <div>
             <div class="about-section">
-                <h1>About Us</h1>
-                <p>"We are Real people diving into AUTHENTIC CONVERSATIONS... all of the time."</p>
+                <h1>"We are Real people diving into AUTHENTIC CONVERSATIONS... all of the time."</h1>
                 <br></br>
 
-                <h1>Vision</h1>
-                <p> Conversations around diversitym equity,a nd inclusion can be very difficualt. Our VISION is 
-                    to create a dynamic, fluid and transdisciplinary platform for discussing issues surrounding diversity,
-                    equity, and inclusion.
-                </p>
-
-                <br></br>
-                <h1>Mission</h1>
-                <ol type="1">
-                    <li>Deliver high quality <span>counseling</span> to individuals experiencing trauma as
-                    a result of experiences that used their diversity against them.</li>
-                    <li>Deliver high quality training to individuals desiring to create systemic changes, in diversity and
-                        inclusion in high schools and colleges.
-                    </li>
-                    <li>Perform culturally sensitive evaluations for high schools and colleges interested in conducting a
-                        diversity and inclusion audit.
-                    </li>
-                    <li>Deliver high quality, and objective mediation for indiviuals needing support in addressing issues of
-                        diversity and inclusion at their school setting.
-                    </li>
-                </ol>
+                <div className="content">
+                    <h2>Vision</h2>
+                    <p> Conversations around diversity equity, and inclusion can be very difficult. Our VISION is 
+                        to create a dynamic, fluid and transdisciplinary platform for discussing issues surrounding diversity,
+                        equity, and inclusion.
+                    </p>
+                </div>
+                
+                <div className="content">
+                    <h2>Mission</h2>
+                    <ol type="1">
+                        <li>Deliver high quality <span>counseling</span> to individuals experiencing trauma as
+                        a result of experiences that used their diversity against them.</li>
+                        <li>Deliver high quality training to individuals desiring to create systemic changes, in diversity and
+                            inclusion in high schools and colleges.
+                        </li>
+                        <li>Perform culturally sensitive evaluations for high schools and colleges interested in conducting a
+                            diversity and inclusion audit.
+                        </li>
+                        <li>Deliver high quality, and objective mediation for indiviuals needing support in addressing issues of
+                            diversity and inclusion at their school setting.
+                        </li>
+                    </ol>
+                </div>
             </div>
 
             <div className='cards'>
@@ -43,34 +45,34 @@ export default function AboutUs() {
                     <ul className='cards__items'>
                         <CardItem
                         src='images/josh.jpg'
-                        text=''
-                        label='Joshua Ma'
+                        text='Joshua Ma'
+                        label='Founder'
                         path='/about-us'
                         />
                         <CardItem
                         src='images/zack.jpg'
-                        text='Information & Computer Science Major at University of Irvine'
-                        label='Zachary Punsalang'
+                        text='Zachary Punsalang'
+                        label='Web Developer'
                         path='/about-us'
                         />
                     </ul>
                     <ul className='cards__items'>
                         <CardItem
                         src='images/art.png'
-                        text='Information & Computer Science Major at University of Irvine'
-                        label='Art Punsalang'
+                        text='Art Punsalang'
+                        label='Web Developer'
                         path='/about-us'
                         />
                         <CardItem
-                        src='images/megan.jpg'
-                        text=''
-                        label='Franchesca Lueng'
+                        src='images/franchesca.jpg'
+                        text='Franchesca Lueng'
+                        label='Web Developer'
                         path='/about-us'
                         />
                         <CardItem
                         src='images/rex.jpg'
-                        text=''
-                        label='Xingchen Yang'
+                        text='Xingchen Yang'
+                        label='Web Developer'
                         path='/about-us'
                         />
                     </ul>

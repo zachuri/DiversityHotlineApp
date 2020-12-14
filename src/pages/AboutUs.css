@@ -17,6 +17,14 @@ html {
   box-sizing: inherit;
 }
 
+.content {
+  margin: 25px 20% 0px 20%;
+}
+
+.message {
+  text-align: center;
+}
+
 .column {
   float: left;
   width: 33.3%;
@@ -31,7 +39,6 @@ html {
 
 .about-section {
   padding: 50px;
-  text-align: center;
   background-color: #474e5d;
   color: white;
 }

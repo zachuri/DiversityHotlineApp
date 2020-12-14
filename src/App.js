@@ -5,7 +5,12 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Intro from './pages/Intro';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import Products from './pages/AboutUs';
+import AboutUs from './pages/AboutUs';
+import Josh from './pages/Team/Josh'
+import Zack from './pages/Team/Zack'
+import Art from './pages/Team/Art'
+import Franchesca from './pages/Team/Franchesca'
+import Rex from './pages/Team/Rex'
 import SignUp from './pages/SignUp';
 import Valve1 from './pages/valves/Valve1';
 import Valve2 from './pages/valves/Valve2';
@@ -27,7 +32,12 @@ function App() {
         <Route path='/' exact component={Intro} />
         <Route path='/home' component={Home} />
         <Route path='/services' component={Services} />
-        <Route path='/about-us' component={Products} />
+        <Route path='/about-us' component={AboutUs} />
+        <Route path='/josh' component={Josh} />
+        <Route path='/zack' component={Zack} />
+        <Route path='/art' component={Art} />
+        <Route path='/franchesca' component={Franchesca} />
+        <Route path='/rex' component={Rex} />
         <Route path='/sign-up' component={SignUp} />
         <Route path='/valve1' component={Valve1} />
         <Route path='/valve2' component={Valve2} />
