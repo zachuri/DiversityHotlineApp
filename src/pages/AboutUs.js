@@ -3,13 +3,17 @@ import '../App.css'
 import './AboutUs.css'
 import CardItem from '../components/CardItem';
 import '../components/Cards.css'
+import './Team/profile.css'
 
 export default function AboutUs() {
     return (
 
         <div>
             <div class="about-section">
-                <h1>"We are Real people diving into AUTHENTIC CONVERSATIONS... all of the time."</h1>
+                <div className="message">
+                    <h1>"We are Real people diving into AUTHENTIC CONVERSATIONS... all of the time."</h1>
+                </div>
+
                 <br></br>
 
                 <div className="content">
@@ -47,13 +51,13 @@ export default function AboutUs() {
                         src='images/josh.jpg'
                         text='Joshua Ma'
                         label='Founder'
-                        path='/about-us'
+                        path='/josh'
                         />
                         <CardItem
                         src='images/zack.jpg'
                         text='Zachary Punsalang'
                         label='Web Developer'
-                        path='/about-us'
+                        path='/zack'
                         />
                     </ul>
                     <ul className='cards__items'>
@@ -61,19 +65,19 @@ export default function AboutUs() {
                         src='images/art.png'
                         text='Art Punsalang'
                         label='Web Developer'
-                        path='/about-us'
+                        path='/art'
                         />
                         <CardItem
                         src='images/franchesca.jpg'
                         text='Franchesca Lueng'
                         label='Web Developer'
-                        path='/about-us'
+                        path='/franchesca'
                         />
                         <CardItem
                         src='images/rex.jpg'
                         text='Xingchen Yang'
                         label='Web Developer'
-                        path='/about-us'
+                        path='/rex'
                         />
                     </ul>
                 </div>
